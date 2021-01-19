@@ -3,7 +3,7 @@ from bears import *
 
 class TestAssign1(unittest.TestCase):
     def test_bear_01(self):
-        self.assertTrue(bears(250))
+        self.assertEqual(bears(250), True)
 
     def test_bear_02(self):
         self.assertTrue(bears(42))
