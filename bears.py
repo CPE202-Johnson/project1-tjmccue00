@@ -1,7 +1,6 @@
 # int -> T/F
 #Function that sees if a given integer can win the bear game
 def bears(n):
-    print(n)
     a = 0
     b = 0
     c = 0
@@ -27,5 +26,3 @@ def bears(n):
             return(False)
     if a == False or b == False or c == False:
         return(False)
-
-print(bears(1053))
