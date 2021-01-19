@@ -27,5 +27,10 @@ class TestBaseConvert(unittest.TestCase):
     def test_base14(self):
         self.assertEqual(convert(41,14),"2D")
 
+    def test_base10(self):
+        i = '6'
+        j = '10'
+        self.assertEqual(convert(i,j),str(i))
+
 if __name__ == "__main__":
         unittest.main()
