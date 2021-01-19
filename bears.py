@@ -14,7 +14,7 @@ def bears(n):
                 print("True1")
                 return(True)
         if n % 2 == 0:
-            b = bears(n/2)
+            b = bears(n//2)
             if b == True:
                 print("True1")
                 return(True)
