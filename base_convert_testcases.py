@@ -21,7 +21,7 @@ class TestBaseConvert(unittest.TestCase):
     def test_base16_2(self):
         self.assertEqual(convert(335,16),"14F")
 
-    def test_base15(self):
+    def test_base15_2(self):
         self.assertEqual(convert(224,15),"EE")
 
     def test_base14(self):
