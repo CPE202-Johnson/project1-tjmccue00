@@ -1,9 +1,11 @@
 # int -> T/F
 #Function that sees if a given integer can win the bear game
 def bears(n):
+    print(n)
     if n < 42:
         return(False)
     if n == 42:
+        print(True)
         return(True)
     if n > 42:
         if n % 5 == 0:
@@ -19,3 +21,5 @@ def bears(n):
                 a = bears(n - int(float(str(n)[len(str(n))-2:-1]))*int(str(n)[-1]))
                 if a == True:
                     return(True)
+
+print(bears(250))
