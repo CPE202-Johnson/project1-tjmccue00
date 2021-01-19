@@ -4,6 +4,7 @@ def bears(n):
     a = 0
     b = 0
     c = 0
+    print(n)
     if n < 42:
         return(False)
     if n == 42:
@@ -17,12 +18,16 @@ def bears(n):
             b = bears(n//2)
             if b == True:
                 return(True)
-        if n % 3 or n % 4 == 0:
+        if n % 3 == 0 or n % 4 == 0:
             if '0' not in str(n):
                 a = bears(n - int(float(str(n)[len(str(n))-2:-1]))*int(str(n)[-1]))
                 if a == True:
                     return(True)
-    if a or b or c == False:
-        return False
+        else:
+            return(False)
+    if a == True or b == True or c == True:
+        return(True)
+    else:
+        return(False)
 
-print(bears(72))
+print(bears(151))
