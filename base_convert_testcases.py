@@ -10,7 +10,7 @@ class TestBaseConvert(unittest.TestCase):
         self.assertEqual(convert(30,4),"132")
 
     def test_base16(self):
-        self.assertEqual(convert(316,16),"13C")
+        self.assertEqual(convert(316,16),"1312")
 
 if __name__ == "__main__":
         unittest.main()
