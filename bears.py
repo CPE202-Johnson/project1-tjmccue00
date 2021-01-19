@@ -24,7 +24,3 @@ def bears(n):
                     return(True)
         else:
             return(False)
-    if a == True or b == True or c == True:
-        return(True)
-
-print(bears(151))
