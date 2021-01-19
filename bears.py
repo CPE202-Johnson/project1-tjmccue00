@@ -4,7 +4,6 @@ def bears(n):
     a = 0
     b = 0
     c = 0
-    print(n)
     if n < 42:
         return(False)
     if n == 42:
@@ -27,7 +26,5 @@ def bears(n):
             return(False)
     if a == True or b == True or c == True:
         return(True)
-    else:
-        return(False)
 
 print(bears(151))
