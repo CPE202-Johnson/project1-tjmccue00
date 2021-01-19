@@ -20,5 +20,8 @@ class TestAssign1(unittest.TestCase):
     def test_bear_06(self):
         self.assertFalse(bears(-2))
 
+    def test_bear_07(self):
+        self.assertFalse(bears(151))
+
 if __name__ == "__main__":
     unittest.main()
