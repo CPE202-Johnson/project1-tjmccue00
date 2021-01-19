@@ -1,6 +1,7 @@
 # int -> str
 #Recursive function that returns a string representing num in the base b
 def convert(num, b):
+    print(num,b)
     if num == 0:
         return ""
     n = num // b
@@ -19,4 +20,7 @@ def convert(num, b):
     if r == 15:
         r = 'F'
     new = str(l) + str(r)
+    print(new)
     return(new)
+
+print(convert(316, 16))
