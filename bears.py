@@ -15,7 +15,7 @@ def bears(n):
             if b == True:
                 return(True)
         if n % 3 or n % 4 == 0:
-            bers = n - int(str(n)[len(str(n))-2:-1])*int(float(str(n)[-1]))
+            bers = n - int(float(str(n)[len(str(n))-2:-1]))*int(str(n)[-1])
             if bers > 0:
                 a = bears(bers)
                 if a == True:
