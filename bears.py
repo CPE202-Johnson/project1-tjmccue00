@@ -26,5 +26,3 @@ def bears(n):
             return(False)
     if a == False or b == False or c == False:
         return(False)
-
-print(bears())
