@@ -28,7 +28,7 @@ class TestBaseConvert(unittest.TestCase):
         self.assertEqual(convert(41,14),"2D")
 
     def test_base10(self):
-        i = '6'
+        i = '0'
         j = '10'
         self.assertEqual(convert(i,j),str(i))
 

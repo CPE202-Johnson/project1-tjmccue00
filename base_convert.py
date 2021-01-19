@@ -4,7 +4,7 @@ def convert(num, b):
     num = int(num)
     b = int(b)
     if num == 0:
-        return ""
+        return "0"
     n = num // b
     r = num % b
     l = convert(n, b)
@@ -20,5 +20,8 @@ def convert(num, b):
         r = 'E'
     if r == 15:
         r = 'F'
-    new = str(l) + str(r)
+    if '0' == str(l):
+        return str(r)
+    else:
+        new = str(l) + str(r)
     return(new)
